@@ -79,9 +79,61 @@
           "Value": "Bolagsbolaget AB"
         }
       ]
+    },
+    {
+      "Id": "dc7aa2e9-1918-43b9-b210-000000001234",
+      "InternalId": "dc7aa2e9-1918-43b9-b210-000000001234",
+      "TypeId": "arende",
+      "SourceSystemId": "Modifierad",
+      "Properties": [
+        {
+          "TypeId": "arendeE1",
+          "Value": "3215-24-1234"
+        },
+        {
+          "TypeId": "arendeE2",
+          "Value": "Avslutad"
+        },
+        {
+          "TypeId": "arendeE3",
+          "Value": "Öst"
+        }
+      ]
+    },
+    {
+      "Id": "dc7aa2e9-1918-43b9-b210-000000001235",
+      "InternalId": "dc7aa2e9-1918-43b9-b210-000000001235",
+      "TypeId": "arende",
+      "SourceSystemId": "Modifierad",
+      "Properties": [
+        {
+          "TypeId": "arendeE1",
+          "Value": "3215-24-4567"
+        },
+        {
+          "TypeId": "arendeE2",
+          "Value": "FU pågår"
+        },
+        {
+          "TypeId": "arendeE3",
+          "Value": "Öst"
+        }
+      ]
     }
   ],
   "Links": [
+    {
+      "Id": "525bd2e9-1914-454b-b1d0-000000000001",
+      "InternalId": "525bd2e9-1918-4b4b-b1d0-000000000001",
+      "TypeId": "LT4",
+      "SourceSystemId": "Egenskapad",
+      "FromEntityId": "dc7aa2e9-1918-43b9-b210-000000001234",
+      "FromEntityTypeId": "arende",
+      "ToEntityId": "dc7aa2e9-1918-43b9-b210-000000001235",
+      "ToEntityTypeId": "arende",
+      "Direction": "TO",
+      "Properties": []
+    },
     {
       "Id": "525bd2e9-1914-454b-b1d0-000000000000",
       "InternalId": "525bd2e9-1918-4b4b-b1d0-000000000000",

@@ -1,0 +1,121 @@
+{
+  "Entities": [
+    {
+      "Id": "165128000111",
+      "TypeId": "arende",
+      "SourceSystemId": "Basinfo",
+      "Properties": [
+        {
+          "TypeId": "arendeE1",
+          "Value": "3215-24-1234"
+        },
+        {
+          "TypeId": "arendeE2",
+          "Value": "Påbörjad"
+        }
+      ]
+    },
+    {
+      "Id": "165128000112",
+      "TypeId": "arende",
+      "SourceSystemId": "Basinfo",
+      "Properties": [
+        {
+          "TypeId": "arendeE1",
+          "Value": "3215-24-1235"
+        },
+        {
+          "TypeId": "arendeE2",
+          "Value": "Påbörjad"
+        }
+      ]
+    },
+    {
+      "Id": "165128000113",
+      "TypeId": "arende",
+      "SourceSystemId": "Basinfo",
+      "Properties": [
+        {
+          "TypeId": "arendeE1",
+          "Value": "3215-24-4567"
+        },
+        {
+          "TypeId": "arendeE2",
+          "Value": "Avslutad"
+        }
+      ]
+    },
+    {
+      "Id": "165128000115",
+      "TypeId": "brott",
+      "SourceSystemId": "Basinfo",
+      "Properties": [
+        {
+          "TypeId": "brottE1",
+          "Value": "Brott-1234-2455"
+        },
+        {
+          "TypeId": "brottE2",
+          "Value": "Smuggling"
+        }
+      ]
+    }
+  ],
+  "Links": [
+    {
+      "Id": "bf1c4984-2918-4804-9150-000000000000",
+      "TypeId": "relation",
+      "SourceSystemId": "Egenskapad",
+      "FromEntityId": "f50b3984-2910-4c47-8e00-000000000000",
+      "FromEntityTypeId": "arende",
+      "ToEntityId": "b8874984-2910-4c36-af30-000000000000",
+      "ToEntityTypeId": "brott",
+      "Direction": "TO",
+      "Properties": []
+    },
+    {
+      "Id": "f79f4984-2918-42c1-af50-000000000000",
+      "TypeId": "relation",
+      "SourceSystemId": "Modifierad",
+      "FromEntityId": "165128000111",
+      "FromEntityTypeId": "arende",
+      "ToEntityId": "165128000112",
+      "ToEntityTypeId": "arende",
+      "Direction": "TO",
+      "Properties": []
+    },
+    {
+      "Id": "f79f4984-2918-42c1-af50-000000000001",
+      "TypeId": "relation",
+      "SourceSystemId": "Modifierad",
+      "FromEntityId": "165128000111",
+      "FromEntityTypeId": "arende",
+      "ToEntityId": "165128000113",
+      "ToEntityTypeId": "arende",
+      "Direction": "TO",
+      "Properties": []
+    },
+    {
+      "Id": "f79f4984-2918-42c1-af50-000000000002",
+      "TypeId": "relation",
+      "SourceSystemId": "Modifierad",
+      "FromEntityId": "165128000111",
+      "FromEntityTypeId": "arende",
+      "ToEntityId": "165128000115",
+      "ToEntityTypeId": "brott",
+      "Direction": "TO",
+      "Properties": []
+    },
+    {
+      "Id": "e1d95984-2914-4c44-9780-000000000000",
+      "TypeId": "relation",
+      "SourceSystemId": "Egenskapad",
+      "FromEntityId": "08e94984-2918-447a-a840-000000000000",
+      "FromEntityTypeId": "arende",
+      "ToEntityId": "86e85984-2918-43ec-b380-000000000000",
+      "ToEntityTypeId": "brott",
+      "Direction": "TO",
+      "Properties": []
+    }
+    ]
+}

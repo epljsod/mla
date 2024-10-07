@@ -8,6 +8,7 @@ import HttpRequestMock from 'http-request-mock'
 import * as sokPerson from './SvarSokPerson.json'
 import * as sokBolagEngagemang from './SvarSokBolagsEngagemang.json'
 import * as sokOrganisation from './SvarSokOrganisation.json'
+import * as sokArende from './SvarSokArende.json'
 import * as sokKonton from './SvarSokKonton.json'
 import * as test from './Testdata.json'
 
@@ -82,6 +83,19 @@ export default function setupMockApi () {
   mocker.post('https://fakeurl.testsystem.se/TestData', () => {
     return test
   }, { delay: 750 })
+   mocker.post('https://fakeurl.testsystem.se/SokArende', (requestInfo) => {
+      const param = requestInfo.body.Form?.Params.find(p => p.TypeId === 'arendeE1')
+      if (param?.Value === '3215-24-1234') {
+        return sokArende
+      }
+      if (param?.Value === '3215-24-4567') {
+              return sokArende
+            }
+      return {
+        Entities: [],
+        Links: []
+      }
+    }, { delay: 750 })
   mocker.post('https://fakeurl.testsystem.se/SokOrganisation', (requestInfo) => {
     const param = requestInfo.body.Form?.Params.find(p => p.TypeId === 'organisationE1')
     if (param?.Value === '165128000162') {
